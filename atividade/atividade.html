@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch</title>
+    <link rel="stylesheet" href="atividade.css">
+    <script src="atividade.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>CRUD</h1>
+
+        <input id="usuario" type="number" placeholder="ID">
+        <button onclick="GET(usuario.value)">Buscar</button>
+        <button onclick="GETALL()">Mostrar</button>
+        <button onclick="POST()">Criar</button>
+        <button onclick="PUT(usuario.value)">Atualizar</button>
+        <button onclick="PATCH(usuario.value)">Modificar</button>
+        <button onclick="DELETE(usuario.value)">Deletar</button>
+        <button onclick="FILTER(usuario.value)">Filtrar</button>
+
+        <div id="resp">
+            <p class="campo">Resposta:</p>
+            <div id="respjson"></div>
+        </div>
+    </main>
+</body>
+
+</html>
